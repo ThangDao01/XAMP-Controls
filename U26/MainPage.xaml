@@ -8,8 +8,41 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-		
+    <Grid Background="{ThemeResource AppBarBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto">
+            <Image Source="https://lh3.googleusercontent.com/yGHgYCDn3NGoDljd44GjaBS2a6KoXjw--1K5pxVOOmvjtk_TE8RstLAG1Sm8GbOcaUjlLr9u3c4p1tA=w1366-h656" Height="800" Stretch="None"/>
+
+        </ScrollViewer>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <ScrollViewer 
+                HorizontalScrollBarVisibility="Auto"
+                VerticalScrollBarVisibility="Auto">
+                <Image Source="https://lh3.googleusercontent.com/yGHgYCDn3NGoDljd44GjaBS2a6KoXjw--1K5pxVOOmvjtk_TE8RstLAG1Sm8GbOcaUjlLr9u3c4p1tA=w1366-h656" Height="800" Stretch="None"/>
+            </ScrollViewer>
+            
+        </StackPanel>
+        <ScrollViewer
+            Grid.Row="1"
+            Grid.Column="1"
+            HorizontalScrollBarVisibility="Auto"
+            VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <Image Source="https://lh3.googleusercontent.com/yGHgYCDn3NGoDljd44GjaBS2a6KoXjw--1K5pxVOOmvjtk_TE8RstLAG1Sm8GbOcaUjlLr9u3c4p1tA=w1366-h656" Height="800" Stretch="None"/>
+                <Image Source="https://lh3.googleusercontent.com/yGHgYCDn3NGoDljd44GjaBS2a6KoXjw--1K5pxVOOmvjtk_TE8RstLAG1Sm8GbOcaUjlLr9u3c4p1tA=w1366-h656" Height="800" Stretch="None"/>
+
+            </StackPanel>
+            
+            
+        </ScrollViewer>
 
     </Grid>
 </Page>
